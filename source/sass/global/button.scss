@@ -1,0 +1,19 @@
+.button {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  color: $blue-white;
+  background-color: $purple;
+  text-decoration: none;
+  // text-align: center;
+  letter-spacing: 0.05em;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}

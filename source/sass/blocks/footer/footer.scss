@@ -1,0 +1,36 @@
+.footer__wrapper {
+  background-color: $blue-gray;
+}
+
+.footer__wrapper .text-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 722px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1125px;
+  }
+}
+
+.footer__logo-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social {
+  @include list-zeroing;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  justify-content: flex-end;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

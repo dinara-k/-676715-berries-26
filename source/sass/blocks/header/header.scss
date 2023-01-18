@@ -1,0 +1,41 @@
+.header {
+  background-color: $blue-gray;
+  // color: #ffffff;
+  // padding: 10px 15px;
+}
+
+.header__container {
+  @media (min-width: $tablet-width) {
+    @include block-centering-tablet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 716px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1092px;
+  }
+}
+
+.header__logo {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 133px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 135px;
+  }
+}
+
+.header__logo-title {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

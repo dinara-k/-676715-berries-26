@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body page__body--inner">
+  <body class="page__body">
     <header class="header">
       <div class="header__container">
         <a class="header__logo logo">
@@ -63,7 +63,8 @@
               <fieldset class="form__group form__group--berries">
                 <!-- <div class="form__group-container"> -->
                   <h3 class="title title--h4 form__group-title">Выберите ягоды</h3>
-                  <!-- <div class="form__group-wrapper"> -->
+                  <div class="form__group-wrapper">
+                    <!-- 2 списка -->
                     <ul class="form__list">
                       <li class="form__item">
                         <label class="control">
@@ -107,6 +108,8 @@
                           <span class="control__label">клюква</span>
                         </label>
                       </li>
+                    </ul>
+                    <ul class="form__list">
                       <li class="form__item">
                         <label class="control">
                           <input class="0visually-hidden control__input" type="checkbox" name="gooseberry">
@@ -135,41 +138,93 @@
                           <span class="control__label">черника</span>
                         </label>
                       </li>
-
-                      <!-- <li class="form__item form__item--empty">
-                        <label class="control">
-                          <input class="visually-hidden control__input" type="checkbox" name="raspberry">
-                          <span class="control__mark"></span>
-                          <span class="control__label">малина2</span>
-                        </label>
-                      </li>
-                      <li class="form__item form__item--empty">
-                        <label class="control">
-                          <input class="visually-hidden control__input" type="checkbox" name="cloudberry">
-                          <span class="control__mark"></span>
-                          <span class="control__label">морошка2</span>
-                        </label>
-                      </li>
-                      <li class="form__item form__item--empty">
-                        <label class="control">
-                          <input class="visually-hidden control__input" type="checkbox" name="raspberry">
-                          <span class="control__mark"></span>
-                          <span class="control__label">малина3</span>
-                        </label>
-                      </li>
-                      <li class="form__item form__item--empty">
-                        <label class="control">
-                          <input class="visually-hidden control__input" type="checkbox" name="cloudberry">
-                          <span class="control__mark"></span>
-                          <span class="control__label">морошка3</span>
-                        </label>
-                      </li> -->
-
                     </ul>
-                  <!-- </div> -->
+
+                    <!-- 5 списков -->
+                    <!-- <ul class="form__list">
+                      <li class="form__item">
+                        <label class="control">
+                          <input class="0visually-hidden control__input" type="checkbox" name="cowberry">
+                          <span class="control__mark"></span>
+                          <span class="control__label">брусника</span>
+                        </label>
+                      </li>
+                      <li class="form__item">
+                        <label class="control">
+                          <input class="visually-hidden control__input" type="checkbox" name="cherry">
+                          <span class="control__mark"></span>
+                          <span class="control__label">вишня</span>
+                        </label>
+                      </li>
+                    </ul>
+                      <ul class="form__list">
+                      <li class="form__item">
+                        <label class="control">
+                          <input class="visually-hidden control__input" type="checkbox" name="blueberry">
+                          <span class="control__mark"></span>
+                          <span class="control__label">голубика</span>
+                        </label>
+                      </li>
+                      <li class="form__item">
+                        <label class="control">
+                          <input class="visually-hidden control__input" type="checkbox" name="blackberry">
+                          <span class="control__mark"></span>
+                          <span class="control__label">ежевика</span>
+                        </label>
+                      </li>
+                    </ul>
+                    <ul class="form__list">
+                      <li class="form__item">
+                        <label class="control">
+                          <input class="visually-hidden control__input" type="checkbox" name="strawberry">
+                          <span class="control__mark"></span>
+                          <span class="control__label">клубника</span>
+                        </label>
+                      </li>
+                      <li class="form__item">
+                        <label class="control">
+                          <input class="visually-hidden control__input" type="checkbox" name="cranberry">
+                          <span class="control__mark"></span>
+                          <span class="control__label">клюква</span>
+                        </label>
+                      </li>
+                    </ul>
+                    <ul class="form__list">
+                      <li class="form__item">
+                        <label class="control">
+                          <input class="0visually-hidden control__input" type="checkbox" name="gooseberry">
+                          <span class="control__mark"></span>
+                          <span class="control__label">крыжовник</span>
+                        </label>
+                      </li>
+                      <li class="form__item">
+                        <label class="control">
+                          <input class="visually-hidden control__input" type="checkbox" name="raspberry">
+                          <span class="control__mark"></span>
+                          <span class="control__label">малина</span>
+                        </label>
+                      </li>
+                    </ul>
+                    <ul class="form__list">
+                      <li class="form__item">
+                        <label class="control">
+                          <input class="visually-hidden control__input" type="checkbox" name="cloudberry">
+                          <span class="control__mark"></span>
+                          <span class="control__label">морошка</span>
+                        </label>
+                      </li>
+                      <li class="form__item">
+                        <label class="control">
+                          <input class="visually-hidden control__input" type="checkbox" name="bilberry">
+                          <span class="control__mark"></span>
+                          <span class="control__label">черника</span>
+                        </label>
+                      </li>
+                    </ul> -->
+                  </div>
                 <!-- </div> -->
               </fieldset>
-              <fieldset class="form__group form__group--storage">
+              <fieldset class="form__group form__group--additional">
                 <!-- <div class="text-container"> -->
                   <h3 class="title title--h4 form__group-title">Вид хранения</h3>
                 <!-- </div>
@@ -196,32 +251,10 @@
                         <span class="control__label">ягодные миксы</span>
                       </label>
                     </li>
-
-                    <!-- <li class="form__item">
-                      <label class="control">
-                        <input class="0visually-hidden control__input" type="checkbox" name="fresh-berries">
-                        <span class="control__mark"></span>
-                        <span class="control__label">свежие ягоды2</span>
-                      </label>
-                    </li>
-                    <li class="form__item">
-                      <label class="control">
-                        <input class="visually-hidden control__input" type="checkbox" name="frozen-berries">
-                        <span class="control__mark"></span>
-                        <span class="control__label">замороженные ягоды2</span>
-                      </label>
-                    </li>
-                    <li class="form__item">
-                      <label class="control">
-                        <input class="visually-hidden control__input" type="checkbox" name="berry mixes">
-                        <span class="control__mark"></span>
-                        <span class="control__label">ягодные миксы2</span>
-                      </label>
-                    </li> -->
                   </ul>
                 <!-- </div> -->
               </fieldset>
-              <fieldset class="form__group form__group--delivery">
+              <fieldset class="form__group form__group--programm">
                 <!-- <div class="text-container"> -->
                   <h3 class="title title--h4 form__group-title">Способ доставки</h3>
                 <!-- </div>
@@ -231,50 +264,52 @@
                       <label class="control">
                         <input class="0visually-hidden control__input" type="radio" name="delivery" value="delivery-in-spb" checked>
                         <span class="control__mark"></span>
-                        <span class="control__label">Доставка (по&nbsp;СПБ&nbsp;в&nbsp;пределах КАД)</span>
+                        <span class="control__label">Доставка<br>(по СПБ в пределах КАД)</span>
                       </label>
                     </li>
                     <li class="form__item">
                       <label class="control">
                         <input class="visually-hidden control__input" type="radio" name="delivery" value="pickup">
                         <span class="control__mark"></span>
-                        <span class="control__label">Самовывоз (Набережная&nbsp;Обводного канала, 101)</span>
+                        <span class="control__label">Самовывоз<br>(Набережная Обводного канала, 101)</span>
                       </label>
                     </li>
                   </ul>
-                <!-- </div> -->
+                </div>
               </fieldset>
             </div>
             <fieldset class="form__group form__group--contacts">
               <div class="text-container">
                 <h3 class="title title--h4 form__group-title">Ваши контакты</h3>
-                <div class="form__group-container">
-                  <div class="form__field-group form__field-group--name">
-                    <label class="form__label" for="order-name">Имя <span class="form__label--red">*</span></label>
-                    <input class="form__field field" type="text" id="order-name" name="order-name" placeholder="Как к вам обращаться?" required>
-                  </div>
-                  <!-- <div class="form__group-wrapper"> -->
-                    <div class="form__field-group form__field-group--phone">
-                      <label class="form__label" for="order-phone">Телефон <span class="form__label--red">*</span></label>
-                      <input class="form__field field" type="tel" id="order-phone" name="order-phone" placeholder="+7 ххх ххх хх хх" pattern="8 [\(]\d{3}[\)] [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                <div class="form__wrapper">
+                  <!-- <div class="text-container"> -->
+                    <div class="form__field-group">
+                      <label class="form__label" for="order-name">Имя <span class="form__label--red">*</span></label>
+                      <input class="form__field field" type="text" id="order-name" name="order-name" placeholder="Как к вам обращаться?" required>
                     </div>
-                    <div class="form__field-group form__field-group--email">
-                      <label class="form__label" for="order-email">Email <span class="form__label--red">*</span></label>
-                      <input class="form__field field" type="email" id="order-email" name="order-email" placeholder="Ваш email" required> <!-- field-error - для инпута с ошибочными данными -->
+                    <div>
+                      <div class="form__field-group">
+                        <label class="form__label" for="order-phone">Телефон <span class="form__label--red">*</span></label>
+                        <input class="form__field field" type="tel" id="order-phone" name="order-phone" placeholder="+7 ххх ххх хх хх" pattern="8 [\(]\d{3}[\)] [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                      </div>
+                      <div class="form__field-group">
+                        <label class="form__label" for="order-email">Email <span class="form__label--red">*</span></label>
+                        <input class="form__field field" type="email" id="order-email" name="order-email" placeholder="Ваш email" required> <!-- field-error - для инпута с ошибочными данными -->
+                      </div>
+                    </div>
+                    <div class="form__field-group">
+                      <label class="form__label" for="order-address">Адрес <span class="form__label--red">*</span></label>
+                      <input class="form__field field" type="text" id="order-address" name="order-address" placeholder="Адрес в Санкт-Петербурге" required>
+                    </div>
+                    <div class="form__field-group">
+                      <label class="form__label" for="order-comment">Пожелания к заказу</label>
+                      <textarea class="form__field field form__field-comment" rows="7" id="order-comment" name="order-comment" placeholder="Чем мы можем вам помочь?"></textarea>
                     </div>
                   <!-- </div> -->
-                  <div class="form__field-group form__field-group--address">
-                    <label class="form__label" for="order-address">Адрес <span class="form__label--red">*</span></label>
-                    <input class="form__field field" type="text" id="order-address" name="order-address" placeholder="Адрес в Санкт-Петербурге" required>
-                  </div>
-                  <div class="form__field-group form__field-group--comment">
-                    <label class="form__label" for="order-comment">Пожелания к заказу</label>
-                    <textarea class="form__field field form__field-comment" rows="7" id="order-comment" name="order-comment" placeholder="Чем мы можем вам помочь?"></textarea>
-                  </div>
                 </div>
               </div>
             </fieldset>
-            <div class="form__group-button">
+            <div class="form__group-container">
               <div class="text-container">
                 <button class="button button--main" type="submit">Заказать</button>
               </div>

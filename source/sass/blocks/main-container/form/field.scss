@@ -1,0 +1,10 @@
+.field {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.field::placeholder {
+  color: rgba($gray, 0.7);
+  // opacity: 0.7;
+}

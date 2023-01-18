@@ -1,0 +1,57 @@
+.banner {
+  width: 100%;
+  height: 640px;
+  background-image: url("../../img/banner/banner-main-background-mobile.jpg");
+  background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center top;
+  background-color: $blue-darkgray;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    height: 924px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 800px;
+  }
+}
+
+.banner__container {
+  @include block-centering-mobile;
+
+  @media (min-width: $tablet-width) {
+    width: 532px;
+    margin-right: 23px;
+    margin-left: 213px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 549px;
+    margin-right: 349px;
+    margin-left: 539px;
+  }
+}
+
+// .banner__title {
+//   color: $green;
+//   background-color: $blue-graydark;
+// }
+
+.banner__list {
+  @include list-zeroing;
+}
+
+.banner__list-item {
+  font-size: 16px;
+  line-height: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}

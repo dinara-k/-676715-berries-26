@@ -1,0 +1,14 @@
+.main-nav__list {
+  @include list-zeroing;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: flex-end;
+    width: 496px;
+  }
+}
+
+.main-nav__item {
+  
+}
