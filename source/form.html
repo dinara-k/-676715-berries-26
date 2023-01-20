@@ -36,13 +36,25 @@
               <li class="main-nav__item site-list__item">
                 <a class="main-nav__link site-list__link site-list__link--active" href="form.html">Заказать</a>
               </li>
+
+              <!-- <li class="main-nav__item site-list__item">
+                <a class="main-nav__link site-list__link" href="#anchor-contacts">Контакты sdfsdf</a>
+              </li>
+              <li class="main-nav__item site-list__item">
+                <a class="main-nav__link site-list__link" href="form.html">Заказать sdf</a>
+              </li>
+              <li class="main-nav__item site-list__item">
+                <a class="main-nav__link site-list__link" href="#anchor-contacts">Контакты sdf sdf sdfsdf sdf2</a>
+              </li>
+              <li class="main-nav__item site-list__item">
+                <a class="main-nav__link site-list__link" href="form.html">Заказать sdfsdf sdfsdf3</a>
+              </li> -->
             </ul>
           </div>
         </nav>
       </div>
     </header>
     <main class="main-container main-container--inner">
-      <h1 class="visually-hidden">Форма заказа</h1>
       <!-- Дополнительный баннер -->
       <div class="banner__inner">
         <picture>
@@ -55,10 +67,11 @@
       <section class="order">
         <div class="order__container">
           <div class="order__wrapper">
-            <h2 class="title title--h1 order__title">Закажи ягоды</h2>
-            <p class="order__text description">Мы соберем для вас ягоды и&nbsp;доставим их в удобном для&nbsp;вас&nbsp;виде - свежими или замороженными</p>
+            <h1 class="title title--h1 order__title">Закажи ягоды</h1>
+            <p class="text order__text">Мы соберем для вас ягоды и&nbsp;доставим их в удобном для&nbsp;вас&nbsp;виде - свежими или замороженными</p>
           </div>
           <form class="form" action="https://echo.htmlacademy.ru" method="get">
+            <h2 class="visually-hidden">Форма заказа</h2>
             <div class="form__container">
               <fieldset class="form__group form__group--berries">
                 <!-- <div class="form__group-container"> -->
@@ -231,16 +244,31 @@
                       <label class="control">
                         <input class="0visually-hidden control__input" type="radio" name="delivery" value="delivery-in-spb" checked>
                         <span class="control__mark"></span>
-                        <span class="control__label">Доставка (по&nbsp;СПБ&nbsp;в&nbsp;пределах КАД)</span>
+                        <span class="control__label">Доставка<br>(по&nbsp;СПБ&nbsp;в&nbsp;пределах КАД)</span>
                       </label>
                     </li>
                     <li class="form__item">
                       <label class="control">
                         <input class="visually-hidden control__input" type="radio" name="delivery" value="pickup">
                         <span class="control__mark"></span>
-                        <span class="control__label">Самовывоз (Набережная&nbsp;Обводного канала, 101)</span>
+                        <span class="control__label">Самовывоз<br>(Набережная&nbsp;Обводного канала, 101)</span>
                       </label>
                     </li>
+
+                    <!-- <li class="form__item">
+                      <label class="control">
+                        <input class="0visually-hidden control__input" type="radio" name="delivery" value="delivery-in-spb" checked>
+                        <span class="control__mark"></span>
+                        <span class="control__label">Доставка<br>(по&nbsp;СПБ&nbsp;в&nbsp;пределах КАД)</span>
+                      </label>
+                    </li> -->
+                    <!-- <li class="form__item">
+                      <label class="control">
+                        <input class="visually-hidden control__input" type="radio" name="delivery" value="pickup">
+                        <span class="control__mark"></span>
+                        <span class="control__label">Самовывоз<br>(Набережная&nbsp;Обводного канала, 101)</span>
+                      </label>
+                    </li> -->
                   </ul>
                 <!-- </div> -->
               </fieldset>
@@ -254,14 +282,14 @@
                     <input class="form__field field" type="text" id="order-name" name="order-name" placeholder="Как к вам обращаться?" required>
                   </div>
                   <!-- <div class="form__group-wrapper"> -->
-                    <div class="form__field-group form__field-group--phone">
-                      <label class="form__label" for="order-phone">Телефон <span class="form__label--red">*</span></label>
-                      <input class="form__field field" type="tel" id="order-phone" name="order-phone" placeholder="+7 ххх ххх хх хх" pattern="8 [\(]\d{3}[\)] [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-                    </div>
-                    <div class="form__field-group form__field-group--email">
-                      <label class="form__label" for="order-email">Email <span class="form__label--red">*</span></label>
-                      <input class="form__field field" type="email" id="order-email" name="order-email" placeholder="Ваш email" required> <!-- field-error - для инпута с ошибочными данными -->
-                    </div>
+                  <div class="form__field-group form__field-group--phone">
+                    <label class="form__label" for="order-phone">Телефон <span class="form__label--red">*</span></label>
+                    <input class="form__field field" type="tel" id="order-phone" name="order-phone" placeholder="+7 ххх ххх хх хх" pattern="8 [\(]\d{3}[\)] [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                  </div>
+                  <div class="form__field-group form__field-group--email">
+                    <label class="form__label" for="order-email">Email <span class="form__label--red">*</span></label>
+                    <input class="form__field field" type="email" id="order-email" name="order-email" placeholder="Ваш email" required> <!-- field-error - для инпута с ошибочными данными -->
+                  </div>
                   <!-- </div> -->
                   <div class="form__field-group form__field-group--address">
                     <label class="form__label" for="order-address">Адрес <span class="form__label--red">*</span></label>
@@ -307,48 +335,125 @@
       </section>
       <div class="footer__wrapper">
         <div class="text-container">
-          <div class="footer__logo-social">
-            <a class="footer__logo logo">
-              <img class="footer__logo-title" src="img/logotype/logo-img-mobile.svg" loading="lazy" width="52" height="52" alt="Логотип Ягода.">
-            </a>
-            <ul class="footer__social social">
-              <li class="social__element">
-                <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
-                  <span class="0visually-hidden">Telegram</span>
-                  <svg class="social__icon" width="20" height="18" aria-label="Telegram-чат HTML Academy">
-                    <use href="img/sprite.svg#icon-tg"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__element">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">ВКонтакте</span>
-                  <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
-                    <use href="img/sprite.svg#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__element">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                  <span class="visually-hidden">Youtube</span>
-                  <svg class="social__icon" width="24" height="19" aria-label="ВК-страница HTML Academy">
-                    <use href="img/sprite.svg#icon-youtube"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="copyright__text">HTML Academy</span>
-              <svg class="copyright__icon" width="27" height="34" aria-label="Сайт HTML Academy">
-                <use href="img/sprite.svg#icon-copyright"></use>
-              </svg>
-            </a>
-          </div>
+          <!-- <div class="footer__logo-social"> - 1 вариант -->
+            <!-- <div class="footer__container"> -->
+              <a class="footer__logo logo">
+                <picture>
+                  <!-- <source media="(min-width: 1150px)" srcset="img/logotype/logo-img-desktop.svg" width="149" height="72">
+                  <source media="(min-width: 768px)" srcset="img/logotype/logo-img-tablet.svg" width="113" height="46"> -->
+                  <img class="footer__logo-image" src="img/logotype/logo-img-mobile.svg" width="52" height="52" alt="Логотип Ягода.">
+                </picture>
+                <img class="footer__logo-title" src="img/logotype/logo-title.svg" width="67" height="50" alt="Ягода.">
+              </a>
+              <!-- <a class="footer__logo logo">
+                <img class="footer__logo-title" src="img/logotype/logo-img-mobile.svg" loading="lazy" width="52" height="52" alt="Логотип Ягода.">
+              </a> -->
+              <ul class="footer__social social">
+                <li class="social__element">
+                  <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy">
+                    <span class="0visually-hidden">Telegram</span>
+                    <svg class="social__icon" width="20" height="18" aria-label="Telegram-чат HTML Academy">
+                      <use href="img/sprite.svg#icon-tg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__element">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                    <span class="0visually-hidden">ВКонтакте</span>
+                    <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
+                      <use href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__element">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="0visually-hidden">Youtube</span>
+                    <svg class="social__icon" width="24" height="19" aria-label="ВК-страница HTML Academy">
+                      <use href="img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+
+
+                <!-- <li class="social__element">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                    <span class="0visually-hidden">ВКонтакте</span>
+                    <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
+                      <use href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__element">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="0visually-hidden">Youtube</span>
+                    <svg class="social__icon" width="24" height="19" aria-label="ВК-страница HTML Academy">
+                      <use href="img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__element">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                    <span class="0visually-hidden">ВКонтакте</span>
+                    <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
+                      <use href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__element">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="0visually-hidden">Youtube</span>
+                    <svg class="social__icon" width="24" height="19" aria-label="ВК-страница HTML Academy">
+                      <use href="img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__element">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                    <span class="0visually-hidden">ВКонтакте</span>
+                    <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
+                      <use href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__element">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="0visually-hidden">Youtube</span>
+                    <svg class="social__icon" width="24" height="19" aria-label="ВК-страница HTML Academy">
+                      <use href="img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__element">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                    <span class="0visually-hidden">ВКонтакте</span>
+                    <svg class="social__icon" width="27" height="17" aria-label="ВК-страница HTML Academy">
+                      <use href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__element">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="0visually-hidden">Youtube</span>
+                    <svg class="social__icon" width="24" height="19" aria-label="ВК-страница HTML Academy">
+                      <use href="img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li> -->
+
+              </ul>
+            <!-- </div> -->
+            <div class="footer__copyright copyright">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="copyright__text">HTML Academy</span>
+                <svg class="copyright__icon" width="27" height="34" aria-label="Сайт HTML Academy">
+                  <use href="img/sprite.svg#icon-copyright"></use>
+                </svg>
+              </a>
+            </div>
+          <!-- </div> -->
         </div>
       </div>
     </footer>
-    <script src="./js/script.js" defer></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

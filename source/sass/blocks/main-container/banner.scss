@@ -1,16 +1,16 @@
 .banner {
   width: 100%;
   height: 640px;
+  margin-bottom: 64px;
   background-image: url("../../img/banner/banner-main-background-mobile.jpg");
   background-repeat: no-repeat;
   // background-size: cover;
   // background-position: center top;
   background-color: $blue-darkgray;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     height: 924px;
-    text-align: left;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,30 +20,59 @@
 
 .banner__container {
   @include block-centering-mobile;
+  padding-top: 70px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 532px;
     margin-right: 23px;
     margin-left: 213px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    width: 549px;
+    width: 550px;
     margin-right: 349px;
     margin-left: 539px;
   }
 }
 
-// .banner__title {
-//   color: $green;
-//   background-color: $blue-graydark;
-// }
+.banner__title {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 52px;
+  }
+}
 
 .banner__list {
   @include list-zeroing;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
+  width: 208px;
+  padding-bottom: 36px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 502px;
+    padding-bottom: 52px;
+    padding-left: 26px;
+  }
 }
 
 .banner__list-item {
+  margin-bottom: 12px;
+  padding-left: 44px;
   font-size: 16px;
   line-height: 19px;
 
@@ -53,5 +82,19 @@
   }
 
   @media (min-width: $desktop-width) {
+  }
+}
+
+.banner__button {
+  @media (min-width: $desktop-width) {
+    margin-left: 37px;
+  }
+}
+
+.banner__inner {
+  margin-bottom: 64px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
   }
 }

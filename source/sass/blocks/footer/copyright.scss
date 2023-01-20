@@ -1,4 +1,7 @@
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -7,4 +10,11 @@
   line-height: 13px;
   color: $black;
   background-color: $blue-gray;
+}
+
+.copyright__icon {
+  display: grid;
+  place-items: center;
+  // fill: $grey-66;
+  margin-left: 8px;
 }

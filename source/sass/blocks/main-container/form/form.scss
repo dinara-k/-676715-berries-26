@@ -34,6 +34,18 @@
   // }
 }
 
+.form__group-title {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 48px;
+  }
+}
+
 .form__list {
   @include list-zeroing;
   display: flex;
@@ -126,6 +138,7 @@
     column-count: 5;
     column-gap: 48px;
     max-width: 792px;
+    margin-bottom: 33px;
   }
 }
 
@@ -250,6 +263,7 @@
 // }
 // ------------------
 .form__group--storage .form__list {
+  margin-bottom: 8px;
   // column-count: 2;
   // column-gap: 20px;
   // height: 336px;
@@ -262,13 +276,14 @@
     column-count: 2;
     column-gap: 56px;
     max-width: 443px;
+    margin-bottom: 24px;
     overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    align-items: center;
-    height: auto;
+    // align-items: center;
+    height: 46px;
     column-count: 3;
     column-gap: 48px;
     max-width: 792px;
@@ -291,15 +306,25 @@
 }
 
 .form__group--delivery .form__list {
-  flex-direction: row;
-
   @media (min-width: $tablet-width) {
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 26px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 50px;
   }
 }
 
 .form__group--delivery .form__item {
-  margin-right: 26px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .form__group--contacts .text-container {
@@ -323,11 +348,17 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, min-content);
   row-gap: 36px;
+  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, min-content);
     column-gap: 24px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 48px;
   }
 }
 
@@ -337,23 +368,31 @@
 }
 
 .form__field-group--phone {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }
 
 .form__field-group--email {
-  grid-column: 2 / -1;
-  grid-row: 2 / 3;
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+  }
 }
 
 .form__field-group--address {
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
 }
 
 .form__field-group--comment {
-  grid-column: 1 / -1;
-  grid-row: 4 / -1;
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 4 / -1;
+  }
 }
 // .form__field-group--name {
 //   width: 50%;
@@ -368,6 +407,7 @@
 // }
 
 .form__label {
+  padding-bottom: 4px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -376,12 +416,14 @@
   color: $red;
 }
 
-.form__group-button {
-  text-align: center;
-}
+// .form__group-button {
+//   text-align: center;
+// }
 
 .form__group-button .text-container {
   @media (min-width: $tablet-width) {
+    display: grid;
+    place-items: center;
     width: 624px;
   }
 

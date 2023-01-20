@@ -5,7 +5,7 @@
   color: $blue-white;
   background-color: $purple;
   text-decoration: none;
-  // text-align: center;
+  text-align: center;
   letter-spacing: 0.05em;
   border: none;
 
@@ -15,5 +15,18 @@
   }
 
   @media (min-width: $desktop-width) {
+  }
+}
+
+.button--main {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 40px;
+  box-shadow: 0 4px 4px rgba($purple-shadow, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 336px;
+    padding-bottom: 18px;
   }
 }
